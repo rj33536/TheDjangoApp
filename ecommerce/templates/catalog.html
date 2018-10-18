@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block main %}
+<section class="container text-center">
+    <p class="display-4">Catalog </p>
+    <hr class="hr--small">
+</section>
+
+<section class=" container text-center">
+    <section class="recommended-items container-fluid text-center">
+        {%for product in products %}
+        <div class="card">
+            <img class="card-img-top" src="{{product.image.url}}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{product.name}}</h4>
+                <p class="card-text">{{product.description}}</p>
+                <p id="price">&#8377; {{product.price}} </p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+</section>
+{% endblock%}

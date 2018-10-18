@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block main %}
+<div id="branding" class="container-fluid text-center">
+
+    <p class="display-4 text-center">Window</p>
+    <button class="btn btn-danger">Shop now</button>
+</div>
+
+
+<section class="container text-center">
+    <p class="display-4">Tell Something </p>
+    <hr class="hr--small">
+    <p>Use this text to share information about your brand with your customers. Describe a product, share
+        announcements, or welcome customers to your store.</p>
+
+</section>
+<section class=" container text-center">
+    <p class="display-4 text-center" id="recommended">Recommended for you</p>
+    <hr class="hr--small">
+    <section class="recommended-items container-fluid text-center">
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/main.jpeg' %}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Redmi 6A</h4>
+                <p class="card-text">2GB RAM | 16 MP | 8 MP</p>
+                <p id="price">$500</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/main.jpeg' %}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Redmi 6A</h4>
+                <p class="card-text">2GB RAM | 16 MP | 8 MP</p>
+                <p id="price">$500</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/main.jpeg' %}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Redmi 6A</h4>
+                <p class="card-text">2GB RAM | 16 MP | 8 MP</p>
+                <p id="price">$500</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
