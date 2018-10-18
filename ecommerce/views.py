@@ -13,4 +13,6 @@ def products(request):
 def FAQ(request):
     return render(request,'FAQ.html')    
 def policy(request):
-    return render(request,'policy.html')        
+    return render(request,'policy.html')     
+def checkout(request):
+    return render(request,'order.html')       
