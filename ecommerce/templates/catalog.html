@@ -15,7 +15,7 @@
                 <h4 class="card-title">{{product.name}}</h4>
                 <p class="card-text">{{product.description}}</p>
                 <p id="price">&#8377; {{product.price}} </p>
-                <a class="btn btn-primary"  href="/checkout">Add to cart</a>
+                <a class="btn btn-primary"  href="/checkout/{{product.id}}">Add to cart</a>
             </div>
         </div>
         {% endfor %}

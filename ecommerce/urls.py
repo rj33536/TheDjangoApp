@@ -6,6 +6,6 @@ urlpatterns=[
     path('',views.index),
     path('catalog',views.catalog),
     path('products',views.products),
-    path('checkout',views.checkout),
+    path('checkout/<int:product_id>',views.checkout),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

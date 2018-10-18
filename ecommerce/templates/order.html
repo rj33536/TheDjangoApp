@@ -6,17 +6,18 @@
     <hr class="hr--small">
 </section>
 <section class="container">
-    <div class="form-group">
+    <form class="form-group" method="POST">
+            {% csrf_token %}
             <label for="">Name</label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+            <input type="text" class="form-control" name="name" id="" aria-describedby="emailHelpId" placeholder="">
         <label for="">Email</label>
-        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+        <input type="email" class="form-control" name="email" id="" aria-describedby="emailHelpId" placeholder="">
         <label for="">Mobile No</label>
-        <input type="tel" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+        <input type="tel" class="form-control" name="Mobile" id="" aria-describedby="emailHelpId" placeholder="">
         <label for="">Address</label>
-        <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+        <input type="text" class="form-control" name="Address" id="" aria-describedby="emailHelpId" placeholder="">
         <button type="submit" class="btn btn-primary ">Submit</button>      
-      </div>
+    </form>
       
 </section>
 {%endblock%}
