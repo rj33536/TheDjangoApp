@@ -25,7 +25,7 @@ SECRET_KEY = '=8ng%wloy#yq!bj*hovm2i*g-fer@0dt2e3$o1631036^idgyc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rj33536.pythonanywhere.com']
 
 
 # Application definition
@@ -122,4 +122,6 @@ MEDIA_ROOT=(
     BASE_DIR
 )
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/rj33536/TheDjangoApp/static'
+
 MEDIA_URL='/media/'
