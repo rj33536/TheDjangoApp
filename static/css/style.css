@@ -1,0 +1,72 @@
+body{
+    background-color: aliceblue !important;
+    width:auto !important;
+    margin:0px;
+}
+hr{
+    border-top: solid black !important;
+    border-width: 2px !important;
+    width: 50px;
+}
+#particles-js{
+    background: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)),url("../images/main.jpeg") no-repeat;
+    width: auto;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0%;
+    padding:0%;
+
+}
+#particles-js p{
+    color: white;
+    padding-top:15%;
+}
+section{
+    margin-top: 70px;
+}
+.recommended-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    overflow: hidden;
+    border: 2px solid black !important;
+}
+img{
+    height: 200px !important;
+}
+img:hover{
+    opacity: 0.8;
+}
+@keyframes expand{
+    from {width: 300px;}
+    to{ width: 310px;}
+}
+#newsletter button{
+    align-items: center;
+    margin: 10px;
+}
+#newsletter{
+    margin-bottom:50px;
+}
+#email{
+    height: 40px;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+.footer{
+    color: white;
+    padding: 0.8%;
+    background-size: cover;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top:10px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
