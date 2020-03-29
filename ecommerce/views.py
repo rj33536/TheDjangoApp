@@ -50,17 +50,18 @@ def checkout(request,product_id):
 
     return render(request,'order.html',context=context)
 
-'''
+
 @login_required(redirect_field_name='login')
-def myblogs(request):
+def mycart(request):
 	user = request.user
-	MyBlogs = blog.objects.filter(author = user)
+	Cart = user.cart.all()
+	print(Cart)
 	context ={
 		"user":user,
-		"blogs":MyBlogs,
+		"cart":Cart,
 	}
 	return render(request,'cart.html',context=context)
-'''
+
 def register(request):
 	if request.user.is_authenticated:
 		return HttpResponseRedirect(reverse("index"))

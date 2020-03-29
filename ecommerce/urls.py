@@ -10,6 +10,6 @@ urlpatterns=[
     
     path('accounts/login/',views.login,name="login"),
     path('accounts/logout/',views.logout,name="logout"),
-    #path('cart',views.myblogs, name="cart"),
+    path('cart',views.mycart, name="cart"),
     path('register',views.register,name="register"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
